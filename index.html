@@ -16,5 +16,25 @@
    <a href="https://kenshiro-0316.github.io/English">勉強-English</a>
    <h4>勉強-study</h4>
    <a href="https://kenshiro-0316.github.io/study">勉強-study</a>
+        <script type="text/javascript">
+    function first() {
+       var user = prompt("ユーザー名を入力してください");
+       if (user==false || user== null) {
+         alert("ユーザー名を入力してください")
+         first();
+       }else{
+         document.title=user;
+       }
+       var pass=prompt("Welcom "+user+"様パスワードを入力してください")
+       var password="kendea1221"
+            if (pass==password) {
+         alert("ログインできました。")
+       }else{
+         alert("ログインできません")
+         first();
+       }
+    }
+    window.onload=first();
+  </script>
   </body>
 </html>
